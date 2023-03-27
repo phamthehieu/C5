@@ -1,5 +1,5 @@
 
-import {Link, useParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {profileUser} from "../service/usersService";
@@ -21,7 +21,7 @@ export default function Menu() {
         <>
             <div className="row" style={{marginTop: '20px'}}>
                 <div className="col-12" >
-                    <Link  style={{textDecoration: 'none'}}>
+                    <Link to={''}  style={{textDecoration: 'none'}}>
                         <div className="row" style={{marginTop: '20px'}}>
                             <div className="col-2">
                                 <img

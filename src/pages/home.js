@@ -23,7 +23,7 @@ export default function Home() {
             </div>
             <div className="row">
                 <div className="col" style={{marginTop: '20px', paddingLeft: '30px'}}>
-                    <Menu/>
+                    <Menu></Menu>
                 </div>
                 <div className="col-8" style={{textAlign: 'center', marginTop: '20px'}}>
                     {posts !== undefined && posts.map(item => (
@@ -86,11 +86,14 @@ export default function Home() {
                                             <div className="col"></div>
                                         </center>
                                     </div>
-                                    <div className="col-12"><hr/></div>
+                                    <div className="col-12">
+                                        <hr/>
+                                    </div>
                                     <div className="col-12" style={{marginBottom: '20px'}}>
                                         <div className="row">
                                             <div className="col-3" style={{textAlign: "center", fontSize: '18px'}}>
-                                                <button type={"submit"} style={{border: 'none', backgroundColor: 'white'}}>
+                                                <button type={"submit"}
+                                                        style={{border: 'none', backgroundColor: 'white'}}>
                                         <span className="row">
                                             <span className="col-2" style={{textAlign: 'right'}}>
                                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -106,7 +109,8 @@ export default function Home() {
                                                 </button>
                                             </div>
                                             <div className="col-6" style={{textAlign: "center"}}>
-                                                <button type={"submit"} style={{border: 'none', backgroundColor: 'white'}}>
+                                                <button type={"submit"}
+                                                        style={{border: 'none', backgroundColor: 'white'}}>
                                         <span className="row">
                                             <span className="col-2" style={{textAlign: 'right'}}>
                                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
